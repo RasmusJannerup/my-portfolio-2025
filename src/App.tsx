@@ -5,6 +5,7 @@ import Navbar from "./sections/Navbar"
 import Services from "./sections/Services"
 import ServiceSummary from "./sections/ServiceSummary"
 import Works from "./sections/Works"
+import ContactSummary from "./sections/ContactSummary"
 
 const App = () => {
   return (
@@ -15,7 +16,7 @@ const App = () => {
       <Services />
       <About />
       <Works />
-      <section className="h-screen"></section>
+      <ContactSummary />
     </ReactLenis>
   )
 }
