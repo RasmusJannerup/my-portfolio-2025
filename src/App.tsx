@@ -1,4 +1,5 @@
 import ReactLenis from "lenis/react"
+import About from "./sections/About"
 import Hero from "./sections/Hero"
 import Navbar from "./sections/Navbar"
 import Services from "./sections/Services"
@@ -11,9 +12,8 @@ const App = () => {
       <Hero />
       <ServiceSummary />
       <Services />
-      <section
-        className="h-screen"
-      ></section>
+      <About />
+      <section className="h-screen"></section>
     </ReactLenis>
   )
 }
