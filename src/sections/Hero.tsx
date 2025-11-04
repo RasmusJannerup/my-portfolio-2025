@@ -1,5 +1,8 @@
+import { Environment, Float, Lightformer } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
 import { useMediaQuery } from "react-responsive";
 import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
+import { Planet } from "../components/Planet";
 const Hero = () => {
     const isMobile = useMediaQuery({ maxWidth: 853 })
 
@@ -18,7 +21,7 @@ const Hero = () => {
                 className="absolute inset-0 -z-50"
                 style={{ width: '100vw', height: '100vh' }}
             >
-                {/* <Canvas
+                <Canvas
                     shadows
                     camera={{ position: [0, 0, -10], fov: 17.5, near: 1, far: 20 }}
                 >
@@ -55,7 +58,7 @@ const Hero = () => {
                             />
                         </group>
                     </Environment>
-                </Canvas> */}
+                </Canvas>
             </figure>
         </section>
     )

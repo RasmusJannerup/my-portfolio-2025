@@ -15,8 +15,7 @@ const About = () => {
     `
     const aboutText = `
         I have always been fascinated by design and technology. 
-        This passion led me to pursue a degree in Computer Science in Denmark,
-        where I honed my skills in software development. 
+        This passion led me to pursue a degree in Computer Science in Denmark, where I honed my skills in software development. 
         I have since been lucky enough to work on a variety of projects, which have allowed me to be confident in different front-end technologies and frameworks.
         React and Flutter are my go-to tools for building dynamic and responsive user interfaces,
         and I believe that a well-designed application can make a significant difference in user experience.
@@ -32,8 +31,23 @@ const About = () => {
                 start: 'bottom 80%',
                 end: 'bottom 20%',
                 scrub: true,
-            }
+            },
+            ease: 'power1.inOut',
         })
+
+
+        gsap.set(imgRef.current, {
+            clipPath: 'polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)'
+        });
+
+        gsap.to(imgRef.current, {
+            clipPath: 'polygon(0 0%, 100% 0%, 100% 100%, 0% 100%)',
+            duration: 2,
+            ease: 'power4.out',
+            scrollTrigger: {
+                trigger: containerRef.current,
+            },
+        });
     }, { scope: containerRef });
 
     return (
@@ -57,7 +71,7 @@ const About = () => {
                 >
                 </img>
                 <AnimatedTextLines text={aboutText} />
-            </div>98
+            </div>
         </section>
     )
 }

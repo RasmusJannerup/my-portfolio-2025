@@ -38,7 +38,6 @@ const ServiceSummary = () => {
                 scrub: true,
                 start: "top bottom",
                 end: "bottom top",
-                markers: true
             }
         });
     }, { scope: containerRef });

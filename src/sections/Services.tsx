@@ -15,7 +15,7 @@ const Services = () => {
     const containerRef = useRef<HTMLDivElement>(null);
 
     useGSAP(() => {
-        servicesRefs.current.forEach((el, index) => {
+        servicesRefs.current.forEach((el) => {
             if (!el) return;
 
             gsap.from(el, {
