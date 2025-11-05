@@ -11,7 +11,7 @@ const Hero = () => {
             <AnimatedHeaderSection
                 title="Rasmus Jannerup"
                 textColor="text-black"
-                subTitle="404 No Bugs Found"
+                subTitle=""
                 text={`I help growing brands and startups gain an 
     unfair advantage through 
     thoughtful design and development.`}
@@ -21,7 +21,7 @@ const Hero = () => {
                 className="absolute inset-0 -z-50"
                 style={{ width: '100vw', height: '100vh' }}
             >
-                {/* <Canvas
+                <Canvas
                     shadows
                     camera={{ position: [0, 0, -10], fov: 17.5, near: 1, far: 20 }}
                 >
@@ -58,7 +58,7 @@ const Hero = () => {
                             />
                         </group>
                     </Environment>
-                </Canvas> */}
+                </Canvas>
             </figure>
         </section>
     )

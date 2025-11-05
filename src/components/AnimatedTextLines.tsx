@@ -26,7 +26,7 @@ export const AnimatedTextLines = ({
             opacity: 0,
             stagger: 0.3,
             duration: 1,
-            ease: "back.out",
+            ease: "power2.out",
             scrollTrigger: {
                 trigger: containerRef.current,
             }

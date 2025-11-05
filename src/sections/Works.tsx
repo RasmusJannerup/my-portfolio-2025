@@ -1,9 +1,9 @@
+import { useGSAP } from "@gsap/react";
 import { Icon } from "@iconify/react";
+import { gsap } from "gsap";
+import { useRef, useState } from "react";
 import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
 import { projects } from "../constants";
-import { useRef, useState } from "react";
-import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
 const Works = () => {
 
     const [currentIndex, setCurrentIndex] = useState<number | undefined>(undefined);
@@ -35,7 +35,7 @@ const Works = () => {
             opacity: 0,
             stagger: 0.3,
             duration: 1,
-            ease: 'back.out',
+            ease: 'power2.out',
             delay: 0.3,
             scrollTrigger: {
                 trigger: "#project",
